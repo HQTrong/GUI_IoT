@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>IoT Lab</title>
+	<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+	<img src="./img/logo-hcmute.png" style="width: 700px;">
+	<h1 style="color: green;"> THỰC TẬP CƠ SỞ ỨNG DỤNG IOTs - Lớp sáng T2 </h1>
+	<h3>Sinh viên thực hiện: Huỳnh Quốc Trọng - 20119380</h3>
+	<div id="container">
+		<div class="device">
+			<h2>Độ ẩm: <span id="doam">None </span> </h2>
+			<h2>Nhiệt độ: <span id="nhietdo">None</span> </h2>
+			<img id="d01_img" src="./img/light_bulb_off.png" alt="img">
+			<h2 style="padding-top: 5px;">ĐÈN</h2>
+			<div style="padding-bottom: 15px;">
+				<button id="d01_on"><b>ON</b></button>
+				<button id="d01_off"><b>OFF</b></button>
+			</div>
+		</div>
+		<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+		<script src="control.js"></script>
+
+</body>
+
+</html>

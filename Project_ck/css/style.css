@@ -1,0 +1,198 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+header {
+    color: green;
+    padding-bottom: 30px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 15px;
+  }
+  footer{
+    color: blue;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+  }
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    background: lavender;
+    flex-direction: column;
+}
+.container{
+    display: flex;
+    width: 420px;
+    padding: 50px 0;
+    border-radius: 8px;
+    background: #fff;
+    row-gap: 30px;
+    flex-direction: row;
+    align-items: center;
+}
+.circular-progress1{
+    position: relative;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background: conic-gradient(#7d2ae8 3.6deg, #ededed 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circular-progress2{
+    position: relative;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background: conic-gradient(#7d2ae8 3.6deg, #ededed 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circular-progress3{
+    position: relative;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background: conic-gradient(#7d2ae8 3.6deg, #ededed 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circular-progress1::before{
+    content: "";
+    position: absolute;
+    height: 210px;
+    width: 210px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.circular-progress2::before{
+    content: "";
+    position: absolute;
+    height: 210px;
+    width: 210px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.circular-progress3::before{
+    content: "";
+    position: absolute;
+    height: 210px;
+    width: 210px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.progress-value1{
+    position: relative;
+    font-size: 40px;
+    font-weight: 600;
+    color:blue;
+}
+.progress-value2{
+    position: relative;
+    font-size: 40px;
+    font-weight: 600;
+    color:red;
+}
+.progress-value3{
+    position: relative;
+    font-size: 40px;
+    font-weight: 600;
+    color: #7d2ae8;
+}
+.text{
+    font-size: 30px;
+    font-weight: 500;
+    color: #606060;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    background-color:darkseagreen;
+  }
+  
+  .flex-container > div {
+    background-color: #f1f1f1;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 20px;
+  }
+  #img1{
+  height: 200px;
+  width: 200px;;
+  padding-bottom: 1px;
+  
+  }
+  #img2{
+    height: 200px;
+    width: 200px;;
+    padding-bottom: 1px;
+    
+    }
+#d1_on{
+    font-size: 13px;
+}
+#d1_off{
+    font-size: 13px;
+
+}
+
+#d2_on{
+    font-size: 13px;
+}
+#d2_off{
+    font-size: 13px;
+
+}
+
+.button-box {
+	width: 220px;
+	margin: 0px auto;
+	position: relative;
+	border-radius: 30px;
+	background: #fff
+}
+
+.toggle-btn {
+	padding: 10px 40px;
+	cursor: pointer;
+	background: transparent;
+	border: 0;
+	outline: none;
+	position: relative;
+	text-align: center;
+}
+
+#btn1 {
+	right: 0;
+	top: 0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	background: #e67e22;
+	border-radius: 30px;
+	transition: .5s;
+}
+#btn2 {
+	right: 0;
+	top: 0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	background: #e67e22;
+	border-radius: 30px;
+	transition: .5s;
+}

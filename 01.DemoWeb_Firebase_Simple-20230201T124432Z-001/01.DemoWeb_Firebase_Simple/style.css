@@ -1,0 +1,37 @@
+body {
+
+  text-align: center;
+}
+
+#container {
+  margin: 0 30%;
+}
+
+#d01_img {
+  width: 300px;
+  height: 300px;
+  padding-bottom: 1px;
+  ;
+}
+
+#d01_on {
+  font-size: 20px;
+}
+
+#d01_off {
+  font-size: 20px;
+  background-color: red;
+}
+
+#doam {
+  color: blue;
+}
+
+#nhietdo {
+  color: red;
+}
+
+.device {
+  background-color: azure;
+  border: dashed 1px;
+}

@@ -1,0 +1,99 @@
+header {
+    background-color:honeydew;
+    padding: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   font-size: 80px;;
+  }
+
+  footer{
+    background-color:lavender;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+  }
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    background-color:darkseagreen;
+  }
+  
+  .flex-container > div {
+    background-color: #f1f1f1;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 20px;
+  }
+  #cambien{
+    font-size: 30px;
+    text-align: center;
+    height: 280px;
+  }
+  #img1{
+  height: 100px;
+  width: 100px;;
+  padding-bottom: 1px;
+  
+  }
+  #img2{
+    height: 100px;
+    width: 100px;;
+    padding-bottom: 1px;
+    
+    }
+#img3{
+    height: 100px;
+    width: 100px;;
+    padding-bottom: 1px;
+    }
+#d1_on{
+    font-size: 15px;
+}
+#d1_off{
+    font-size: 15px;
+    background-color: red;
+}
+
+#d2_on{
+    font-size: 15px;
+}
+#d2_off{
+    font-size: 15px;
+    background-color: red;
+}
+
+#d3_on{
+    font-size: 15px;
+}
+#d3_off{
+    font-size: 15px;
+    background-color: red;
+}
+
+#d4_on{
+    font-size: 15px;
+}
+#d4_off{
+    font-size: 15px;
+    background-color: red;
+}
+#d5_on{
+    font-size: 15px;
+}
+#d5_off{
+    font-size: 15px;
+    background-color: red;
+}
+#d6_on{
+    font-size: 15px;
+}
+#d6_off{
+    font-size: 15px;
+    background-color: red;
+}
+
+
+
+

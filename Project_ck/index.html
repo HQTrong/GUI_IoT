@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Project CK IoT </title>
+        <link rel="stylesheet" href="css/style.css">
+                                        
+    </head>
+    <header>
+        <table style="width:100%">
+           <h1>THỰC TẬP SƠ CỞ ỨNG DỤNG IoT</h1>
+          </table>
+    </header>
+    <body>
+        
+        <div>
+
+            <table style="width:100%;font-size: 20px;">
+                <tr>
+                  <td>
+                    <div class="circular-progress1" >
+                        <span class="progress-value1" >0%</span>
+                    </div>
+        
+                  </td>
+                  <td>
+                    <div class="circular-progress2">
+                        <span class="progress-value2">0%</span>
+                    </div>
+        
+                  </td>
+                  <td>
+                    <div class="circular-progress3">
+                        <span class="progress-value3">0%</span>
+                    </div>
+        
+                  </td>
+                </tr>
+                <tr style="text-align: center;">
+                  <td id="doam" style ="font-size: 30px;"><b>Độ ẩm</b></td>
+                  <td id ="nhietdo" style ="font-size: 30px;"><b>Nhiệt độ</b></td>
+                  <td id ="khigas" style ="font-size: 30px;"><b>Khí gas</b></td>
+                
+                </tr>
+                <tr style="text-align: center;height: 100px;">
+                    <td><img id ="img1" src="img/light_bulb_off.png" ></td>
+                    <td></td>
+                    <td><img src="img/light_bulb_off.png" id ="img2"></td>
+                  </tr>
+                  <tr>
+                    <td><div class="form-box">
+                        <div class="button-box">
+                          <div id="btn1"></div>
+                            <button type="button" class="toggle-btn" id = "d1_on" onclick="on1()">ON</button>
+                            <button type="button" class="toggle-btn" id = "d1_off" onclick="off1()" >OFF</button>
+                        </div>  </td>
+                        <td></td>
+                    
+                    <td><div class="form-box">
+                        <div class="button-box">
+                          <div id="btn2"></div>
+                            <button type="button" class="toggle-btn" id = "d2_on" onclick="on2()" > ON</button>
+                            <button type="button" class="toggle-btn" id = "d2_off" onclick="off2()"> OFF</button>
+                        </div></td>
+                  </tr>
+                
+              </table>
+
+              
+            </div>
+            <footer>
+                <p>Sinh viên thực hiện:</p>
+                <h3>1. Huỳnh Quốc Trọng  &emsp; <a href="https://www.facebook.com/quoc.tronghuynh.98/">Facebook</a></h3>
+                <h3>2. Lương Công Hoàn  &emsp;  <a href="https://www.facebook.com/hoan.long.568847">Facebook</a></h3>
+                <p>Trường Đại học Sư Phạm Kĩ Thuật TPHCM</p>
+            </footer>
+        <!-- JavaScript -->
+        <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+    
+</html>
