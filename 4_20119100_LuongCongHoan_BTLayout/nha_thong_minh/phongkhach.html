@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Nhà thông minh</title>
+	<meta charset="UTF-8" />
+    <link rel="stylesheet" href="phongkhachstyle.css">
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-database.js"></script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.4/css/all.css">
+</head>
+
+<body>
+	<div class="container">
+        <div class="header"> 
+            <h1 style="text-align: center; color: rgb(13, 6, 0); font-size: 50px;">Phòng khách</h1>
+        </div>
+        <div class = "body">
+            <div class="menu"> 
+                <a href="trangchu.html" class = "room" id="Trangchu" style="background-color: rgb(21, 21, 93); text-decoration:none;"> 
+                    <h2 style="text-align: center; color: rgb(255, 255, 255); font-size: 35px;"> Trang chủ </h2>
+                </a>
+                <a href="phongkhach.html" class = "room" id="Phongkhach" style="background-color: rgb(139, 90, 54); text-decoration:none;"> 
+                    <h2 style="text-align: center; color: rgb(255, 255, 255); margin-right: 10px;"> Phòng khách </h2>
+                    <img src="living-room.png" style="width: 50px; height: 50px;" alt="">
+                </a>
+                <a href="phongbep.html" class = room id="Phongbep" style="background-color: rgb(71, 74, 23); text-decoration:none;">
+                    <h2 style="text-align: center; color: rgb(255, 255, 255); margin-right: 10px;"> Phòng bếp  </h2> 
+                    <img src="kitchen.png" style="width: 50px; height: 50px;" alt="">
+                </a>
+                <a href= "phongngu.html" class = "room" id="Phongngu" style="background-color: rgb(90, 163, 189); text-decoration:none;"> 
+                    <h2 style="text-align: center; color: rgb(255, 255, 255); margin-right: 10px;"> Phòng ngủ</h2>
+                    <img src="bedroom.png" style="width: 50px; height: 50px;" alt="">
+                </a>
+             </div>
+            <div class="sensor" > 
+                <h2 style="text-align: center; color: rgb(9, 47, 80);"> Cảm biến</h2>
+                <div class="sensor1">
+                    <div  id = "temp" style="display: flex; justify-content: center; background-image: url('temp.jpg'); background-size: cover;"> 
+                        <div class="sen1" style="text-align: center; font-size: 22px; font-weight: bold;">
+                            <p >Nhiệt độ:</p>
+                            <p>32℃</p>
+                        </div>
+                    </div>
+                    <div id = "humid" style="display: flex; justify-content: center; align-items: center; background-image: url('humid.jpg'); background-size: cover;"> 
+                        <div class="sen2" style="text-align: center; font-size: 22px; font-weight: bold;">
+                            <p >Độ ẩm:</p>
+                            <p>50%</p>
+                        </div>
+                           
+                    </div>
+                </div>
+                <div class="sensor2">
+                    <div  id ="gas" style="display: flex; justify-content: center; align-items: center; background-image: url('gas.png'); background-size: cover;"> 
+                        <div class="sen3" style="text-align: center; font-size: 22px; font-weight: bold;">
+                            <p >Khí ga:</p>
+                            <p>50</p>
+                        </div>
+                    </div>
+                    <div id ="light" style="display: flex; justify-content: center; align-items: center; background-image: url('light.png'); background-size: cover;"> 
+                        <div class="sen4" style="text-align: center; font-size: 22px; font-weight: bold;">
+                            <p >Ánh sáng:</p>
+                            <p>Độ C</p>
+                        </div>
+                    </div>
+                </div> 
+
+            </div>
+            <div class="device" > 
+                <div class=" device1">
+                    <div class = "den">
+                        <h2 style=" height: 5%; font-size: 23px;">Đèn 1</h2>
+                        <img id ="light1" src="dentat.png" style="width: 70px; height: 45%;">
+                        <div class="toggleall" id="toggle1">
+                            <i id = "nut1"></i>
+                            <button type ="button" class="btn"  onclick="off1()"></button>
+                            <button type ="button" class="btn"  onclick="on1()"></button>
+                            <script src="index.js"></script>
+                        </div>
+                    </div>
+                    <div class = "den">
+                        <h2 style=" height: 5%; font-size: 23px;">Đèn 2</h2>
+                        <img id ="light2" src="dentat.png" style="width: 70px; height: 45%;">
+                        <div class="toggleall" id="toggle2">
+                            <i id = "nut2"></i>
+                            <button type ="button" class="btn"  onclick="off2()"></button>
+                            <button type ="button" class="btn"  onclick="on2()"></button>
+                        </div>
+                    </div>
+                        
+                    <div class = "den">
+                        <h2 style=" height: 5%; font-size: 23px;">Đèn 3</h2>
+                        <img id ="light3" src="dentat.png" style="width: 70px; height: 45%;">
+                        <div class="toggleall" id="toggle3">
+                            <i id = "nut3"></i>
+                            <button type ="button" class="btn"  onclick="off3()"></button>
+                            <button type ="button" class="btn"  onclick="on3()"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class=" device2">
+                    <div class = "den">
+                        <h2 style=" height: 5%; font-size: 23px;">Đèn 4</h2>
+                        <img id ="light4" src="dentat.png" style="width: 70px; height: 45%;">
+                        <div class="toggleall" id="toggle4">
+                            <i id = "nut4"></i>
+                            <button type ="button" class="btn"  onclick="off4()"></button>
+                            <button type ="button" class="btn"  onclick="on4()"></button>
+                        </div>
+                    </div>
+                    <div class = "den">
+                        <h2 style=" height: 5%; font-size: 23px;">Đèn 5</h2>
+                        <img id ="light5" src="dentat.png" style="width: 70px; height: 45%;">
+                        <div class="toggleall" id="toggle5">
+                            <i id = "nut5"></i>
+                            <button type ="button" class="btn"  onclick="off5()"></button>
+                            <button type ="button" class="btn"  onclick="on5()"></button>
+                        </div>
+                    </div>
+                    <div class = "den">
+                        <h2 style=" height: 5%; font-size: 23px;">Đèn 6</h2>
+                        <img id ="light6" src="dentat.png" style="width: 70px; height: 45%;">
+                        <div class="toggleall" id="toggle6">
+                            <i id = "nut6"></i>
+                            <button type ="button" class="btn"  onclick="off6()"></button>
+                            <button type ="button" class="btn"  onclick="on6()"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>	
+        <div class="footer">
+            <div class="footertext" style="opacity: 1;"> 
+                <div class="textright" style="width: 40%; height: 100%; display: flex; align-items: center; padding-left: 10px;">
+                   <div>
+                    <p>Trường Đại học Sư phạm Kỹ thuật TP.HCM</p>
+                    <p>Địa chỉ: Số 1 Võ Văn Ngân TP.Thủ Đức TP.Hồ Chí Minh</p>
+                   </div> 
+                </div>  
+                <div class="textleft" style="width: 20%; height: 100%; display: flex; align-items: center; padding-right: 10px;">
+                    <div>
+                        <p>Sinh viên: Lương Công Hoàn</p>
+                        <p>Ngành: Công nghệ kỹ thuật máy tính</p>
+                        <p>Số điện thoại: 0393XXXXXX</p>
+                       </div> 
+                </div>
+            </div>
+        </div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Phòng Khách</title>
+   
+        <link rel="stylesheet" href="my.css">
+    </head>
+    <body>
+        <div class="container">
+        <header>
+            <table style="width:100%">
+                <tr>
+                  <td> <img src="img/logo-hcmute.png"></td>
+                  <td >Phòng Khách</td>
+                </tr>
+              </table>
+        </header>
+        <div style="background-color: cyan;">
+        <table style="width:100%">
+            <tr>
+              <th style="width:7%">
+
+                  <div class="flex-container">
+                    <div>
+                      <a href="phongkhach.html">Phòng Khách</a>
+                    </div>
+                    <div>
+                      <a href="phongbep.html">Phòng Bếp</a>
+                      </div>
+                    <div>
+                      <a href="phongngu.html">Phòng Ngủ</a>
+                    </div>   
+              </div></th>
+              <th>
+                <table style="width:100%">
+                    <tr>
+                      <th>
+                        <table style="width: 100%;" id="cambien">
+                            <tr>
+                              <th>Độ ẩm: <span id="doam">None </span> </th>
+                            </tr>
+                            <tr>
+                              <td >Nhiệt độ: <span id="nhietdo">None </span></td>
+                            </tr>
+                            <tr>
+                              <td>Khí gas: <span id="khigas">None </span></td> 
+                            </tr>
+                            <tr>
+                              <td >Ánh sáng: <span id="anhsang">None </span></td>
+                            </tr>
+                          </table>
+                      </th>
+                      <th style="width: 70%;"id="thietbi">
+                        <table style="width:100%">
+                            <tr id="thietbi">
+                              <td>
+                                <img id ="img1" src="img/light_bulb_off.png" >
+                               
+                              </td>
+                              <td>
+                                <img src="img/light_bulb_off.png" id ="img2">
+                            </td>
+                              <td>
+                                <img src="img/light_bulb_off.png" id ="img3">
+                              </td>
+                            </tr>
+                             <tr>
+                              <td>
+                                <div class="form-box">
+                                  <div class="button-box">
+                                    <div id="btn1"></div>
+                                      <button type="button" class="toggle-btn" id = "d1_on" onclick="on1()">ON</button>
+                                      <button type="button" class="toggle-btn" id = "d1_off" onclick="off1()" >OFF</button>
+                                  </div>
+                              </td>
+                              <td>
+                                <div class="form-box">
+                                  <div class="button-box">
+                                    <div id="btn2"></div>
+                                      <button type="button" class="toggle-btn" id = "d2_on" onclick="on2()" > ON</button>
+                                      <button type="button" class="toggle-btn" id = "d2_off" onclick="off2()"> OFF</button>
+                                  </div>
+                            </td>
+                              <td>
+                                <div class="form-box">
+                                  <div class="button-box">
+                                    <div id="btn3"></div>
+                                      <button type="button" class="toggle-btn" id = "d3_on" onclick="on3()" >ON</button>
+                                      <button type="button" class="toggle-btn" id = "d3_off" onclick="off3()" >OFF</button>
+                                  </div>
+                              </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                  <img src="img/quat_off.jpg" id ="img4">
+                                 
+                                </td>
+                                <td>
+                                  <img src="img/quat_off.jpg" id ="img5">
+                              </td>
+                                <td>
+                                  <img src="img/tivi_off.png" id ="img6">
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <div class="form-box">
+                                    <div class="button-box">
+                                      <div id="btn4"></div>
+                                        <button type="button" class="toggle-btn" id = "d4_on" onclick="on4()" >ON</button>
+                                         <button type="button" class="toggle-btn" id = "d4_off" onclick="off4()" >OFF</button>
+                                    </div>
+                                </td>
+                                <td>
+                                  <div class="form-box">
+                                    <div class="button-box">
+                                      <div id="btn5"></div>
+                                        <button type="button" class="toggle-btn" id = "d5_on" onclick="on5()" >ON</button>
+                                         <button type="button" class="toggle-btn" id = "d5_off" onclick="off5()">OFF</button>
+                                    </div>
+                              </td>
+                                <td>
+                                  <div class="form-box">
+                                    <div class="button-box">
+                                      <div id="btn6"></div>
+                                        <button type="button" class="toggle-btn" id = "d6_on" onclick="on6()" >ON</button>
+                                         <button type="button" class="toggle-btn" id = "d6_off" onclick="off6()" >OFF</button>
+                                    </div>
+                                </td>
+                              </tr>
+                             
+                          </table>
+                    </th> 
+                    </tr>
+                  </table>
+              </th> 
+            </tr>
+          </table>
+        </div>
+        <footer>
+            <table style="width:100%">
+                <tr>
+                  <td><b>Huỳnh Quốc Trọng - 20119380 </b>
+                </br>
+                    <p>Là sinh viên ngành Công nghệ kĩ thuật máy tính K20</p>
+                    <a href="https://www.facebook.com/quoc.tronghuynh.98/">Facebook</a>
+                  </td>
+                  <td > <b>Lương Công Hoàn - 20119100</b>
+                  </br>
+                    <p>Là sinh viên ngành Công nghệ kĩ thuật máy tính K20</p>
+                    <a href="https://www.facebook.com/hoan.long.568847">Facebook</a>
+                  </td>
+                </tr>
+              </table>
+          </footer>
+        </div>
+        <script src="indexpk.js"></script>
+    </body>
+</html>

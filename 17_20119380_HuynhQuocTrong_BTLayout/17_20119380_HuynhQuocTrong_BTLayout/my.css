@@ -1,0 +1,193 @@
+header {
+    background-color:honeydew;
+    padding: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 80px;
+  }
+
+  footer{
+    background-color:honeydew;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+  }
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    background-color:darkseagreen;
+  }
+  
+  .flex-container > div {
+    background-color: #f1f1f1;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 20px;
+  }
+  #cambien{
+    font-size: 30px;
+    text-align: center;
+    height: 280px;
+  }
+  #img1{
+  height: 100px;
+  width: 100px;;
+  padding-bottom: 1px;
+  
+  }
+  #img2{
+    height: 100px;
+    width: 100px;;
+    padding-bottom: 1px;
+    
+    }
+#img3{
+    height: 100px;
+    width: 100px;;
+    padding-bottom: 1px;
+    }
+#img4{
+  height: 100px;
+  width: 100px;;
+  padding-bottom: 1px;
+  }
+#img5{
+    height: 100px;
+    width: 100px;;
+    padding-bottom: 1px;
+    
+    }
+#img6{
+    height: 100px;
+    width: 100px;;
+    padding-bottom: 1px;
+    }
+#d1_on{
+    font-size: 15px;
+}
+#d1_off{
+    font-size: 15px;
+
+}
+
+#d2_on{
+    font-size: 15px;
+}
+#d2_off{
+    font-size: 15px;
+
+}
+
+#d3_on{
+    font-size: 15px;
+}
+#d3_off{
+    font-size: 15px;
+
+}
+
+#d4_on{
+    font-size: 15px;
+}
+#d4_off{
+    font-size: 15px;
+
+}
+#d5_on{
+    font-size: 15px;
+}
+#d5_off{
+    font-size: 15px;
+
+}
+#d6_on{
+    font-size: 15px;
+}
+#d6_off{
+    font-size: 15px;
+
+}
+
+
+.button-box {
+	width: 220px;
+	margin: 0px auto;
+	position: relative;
+	border-radius: 30px;
+	background: #fff
+}
+
+.toggle-btn {
+	padding: 10px 40px;
+	cursor: pointer;
+	background: transparent;
+	border: 0;
+	outline: none;
+	position: relative;
+	text-align: center;
+}
+
+#btn1 {
+	right: 0;
+	top: 0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	background: #e67e22;
+	border-radius: 30px;
+	transition: .5s;
+}
+#btn2 {
+	right: 0;
+	top: 0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	background: #e67e22;
+	border-radius: 30px;
+	transition: .5s;
+}
+#btn3 {
+	right: 0;
+	top: 0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	background: #e67e22;
+	border-radius: 30px;
+	transition: .5s;
+}
+#btn4 {
+	right: 0;
+	top: 0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	background: #e67e22;
+	border-radius: 30px;
+	transition: .5s;
+}
+#btn5 {
+	right: 0;
+	top: 0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	background: #e67e22;
+	border-radius: 30px;
+	transition: .5s;
+}
+#btn6 {
+	right: 0;
+	top: 0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	background: #e67e22;
+	border-radius: 30px;
+	transition: .5s;
+}
+
+
