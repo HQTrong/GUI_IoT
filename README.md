@@ -1,2 +1,0 @@
-# HQTrongTTIoT.github.io
-TTIoT
